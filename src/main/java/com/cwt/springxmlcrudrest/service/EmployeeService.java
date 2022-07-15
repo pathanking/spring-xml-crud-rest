@@ -8,4 +8,6 @@ import org.springframework.stereotype.Service;
 public interface EmployeeService {
     Employees findAll();
     Employee findById(Long id);
+
+    Employee save(Employee employee);
 }

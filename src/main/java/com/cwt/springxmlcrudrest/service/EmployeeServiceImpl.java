@@ -26,4 +26,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     public Employee findById(Long id) {
         return repository.findById(id).get();
     }
+
+    @Override
+    public Employee save(Employee employee) {
+        return repository.save(employee);
+    }
 }
